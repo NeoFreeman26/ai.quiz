@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI測驗遊戲</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI測驗遊戲</h1>
+    <div id="quiz-settings">
+      <div class="setting-item">
+        <label for="quiz-type">選擇題庫類型：</label>
+        <select id="quiz-type">
+          <option value="AI">AI 基礎</option>
+          </select>
+      </div>
+      <div class="setting-item">
+        <label for="question-count">選擇測試題數：</label>
+        <select id="question-count">
+          <option value="5">5 題</option>
+          <option value="10">10 題</option>
+        </select>
+      </div>
+      <button id="start-btn">開始測驗</button>
+    </div>
+    <div id="quiz-box" style="display: none;">
+      <p id="question">載入中...</p>
+      <ul id="choices"></ul>
+      <p id="explanation"></p>
+      <button id="next-btn" style="display: none;">下一題</button>
+      <button id="restart-btn" style="display: none;">重新開始</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* 淺色背景 */
+    color: #333; /* 深灰色文字 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 (如果 body 是視窗高度) */
+    min-height: 100vh; /* 確保 body 至少佔據整個視窗高度 */
+}
+
+
+.container {
+    background-color: #2c3e50; /* 深灰色容器 */
+    color: #ecf0f1; /* 淺色文字 */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 80%;
+    max-width: 700px;
+    text-align: center; /* 內部元素水平置中 (部分情況) */
+}
+
+
+h1 {
+    color: #3498db; /* 鮮豔的標題顏色 */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+#quiz-settings, #quiz-box {
+    margin-bottom: 25px;
+}
+
+
+.setting-item {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.setting-item label {
+    font-weight: bold;
+    color: #ddd;
+}
+
+
+.setting-item select, .setting-item input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #456990;
+    color: #fff;
+}
+
+
+#start-btn, #next-btn, #restart-btn {
+    background-color: #3498db; /* 鮮豔的按鈕顏色 */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+
+#start-btn:hover, #next-btn:hover, #restart-btn:hover {
+    background-color: #2980b9;
+}
+
+
+#question {
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #34495e; /* 稍淺的深灰色背景 */
+    border-radius: 8px;
+}
+
+
+#choices {
+    list-style: none;
+    padding: 0;
+}
+
+
+#choices li {
+    background: #444; /* 深灰色選項背景 */
+    margin: 0.7rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #fff;
+    text-align: left;
+}
+
+
+#choices li:hover {
+    background: #555;
+}
+
+
+#choices li.correct {
+    background: #2ecc71; /* 亮綠色正確答案 */
+    color: white;
+}
+
+
+#choices li.incorrect {
+    background: #e74c3c; /* 亮紅色錯誤答案 */
+    color: white;
+}
+
+
+#explanation {
+    color: #f1c40f; /* 警告或說明文字的顏色 */
+    margin-top: 15px;
+    font-style: italic;
+}
